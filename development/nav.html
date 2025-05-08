@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" type="text/css" href="nav.css" />
+    <link rel="stylesheet" type="text/css" href="nav-dropdown.css" />
+  </head>
+  <body>
+    <header id="navbar">
+      <nav class="navbar-container container">
+        <a href="/" class="home-link">
+          <div class="navbar-logo"></div>
+          Website Name
+        </a>
+        <button
+          type="button"
+          id="navbar-toggle"
+          aria-controls="navbar-menu"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div id="navbar-menu" aria-labelledby="navbar-toggle">
+          <ul class="navbar-links">
+            <li class="navbar-item"><a class="navbar-link" href="/services">Services</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="/why">Why Us</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="/hire">Hire Us</a></li>
+            <li class="navbar-item dropdown">  
+                <button class="dropbtn">More</button>
+                <ul class="dropdown-content">
+                  <li class="navbar-item"><a class="navbar-link" href="/about">About Us</a></li>
+                  <li class="navbar-item"><a class="navbar-link" href="/contact">Contact Us</a></li>
+                </ul>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <script type="text/javascript" src="nav.js"></script>
+    <script type="text/javascript" src="clickable-dropdown.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Navbar (Customizable)</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header id="navbar">
+        <nav class="navbar-container container">
+          <a href="/" class="home-link">
+            <div class="navbar-logo"></div>
+            Website Name
+          </a>
+          <button type="button" class="navbar-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navbar-menu">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <div id="navbar-menu" class="detached">
+            <ul class="navbar-links">
+              <li class="navbar-item"><a class="navbar-link" href="/about">Services</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="/blog">Why Us</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="/careers">Hire Us</a></li>
+              <!-- <li class="navbar-item"><a class="navbar-link" href="/contact">Contact</a></li> -->
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <form id="options" class="container">
+            <label for="detached">Detached <input type="radio" checked name="navtype" id="detached" /></label>
+            <label for="attached">Attached <input type="radio" name="navtype" id="attached" /></label>
+            <label for="left-sidebar">Left sidebar <input type="radio" name="navtype" id="left-sidebar" /></label>
+            <label for="right-sidebar">Right sidebar <input type="radio" name="navtype" id="right-sidebar" /></label>
+        </form>
+    </main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

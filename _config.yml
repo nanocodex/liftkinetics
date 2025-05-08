@@ -37,6 +37,7 @@ plugins:
 exclude:
   - start.cmd
   - LICENSE
+  - development/
 
 # Front matter defaults
 defaults:
